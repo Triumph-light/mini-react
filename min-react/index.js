@@ -193,12 +193,10 @@ function performUnitOfWork(fiber) {
     }
 }
 
-const element = createElement(
-    "div",
-    { id: "foo"},
-    createElement("a", null, "bar"),
-    createElement("b", null, "bar")
-)
+function App(props) {
+    return <h1>h1 {props.name}</h1>
+}
+const element = <App name="foo"></App>
 const container = document.getElementById('root')
 
 render(element, container)
