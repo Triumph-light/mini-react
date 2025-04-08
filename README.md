@@ -24,5 +24,8 @@ commit触发时机：整个fiber树遍历完成
 处理dom的render、update、delete
 
 # function component
+函数组件是直接执行，来拿到react element
+在fiber节点上的type就是直接对应具体的函数，vue的组件也是一样的
 
 # hooks
+通过fiber节点维护一个hooks链表，通过下标去标注当前运行的state，setState触发更新，将工作树重新执行一遍
