@@ -29,3 +29,5 @@ commit触发时机：整个fiber树遍历完成
 
 # hooks
 通过fiber节点维护一个hooks链表，通过下标去标注当前运行的state，setState触发更新，将工作树重新执行一遍
+
+# 后续待完善，阅读react 源码，分析面试题
